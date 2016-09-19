@@ -11,6 +11,11 @@ module.exports = {
     filename: "bundle.js",
     libraryTarget: 'commonjs'
   },
+  resolveLoader: {
+      alias: {
+        "glob": path.join(__dirname, "../../")
+      }
+    },
   module: {
     loaders: [
       {

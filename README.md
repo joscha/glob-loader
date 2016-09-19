@@ -29,6 +29,12 @@ Pattern is relative to the file directory.
 var modules = require("glob-loader!./dir.pattern");
 ```
 
+### Changing the glob context
+
+```js
+var modules = require("glob-loader!./my.pattern?cwd=../path/to/directory");
+```
+
 ## TODO
 
 * source map
